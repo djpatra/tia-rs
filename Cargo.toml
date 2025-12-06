@@ -1,0 +1,19 @@
+[workspace]
+name = "tia-rs"
+version = "0.1.0"
+edition = "2024"
+
+resolver = "3"
+
+members = [
+  "crates/tia-instrument",
+  "crates/tia-connect",
+  "tia-bin",
+]
+
+[workspace.dependencies]
+tia-connect = { path = "./crates/tia-connect", version = "0.1.0" }
+tia-instrument = { path = "./crates/tia-instrument", version = "0.1.0" }
+tia-bin = { path = "./crates/tia-bin", version = "0.1.0" }
+
+
